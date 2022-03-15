@@ -1,6 +1,6 @@
 export default function Acoes() {
     return (
-        <div class="acoes">
+        <div className="acoes">
             <ion-icon name="ellipsis-horizontal"></ion-icon>
         </div>
     )

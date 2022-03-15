@@ -7,7 +7,7 @@ import IconesMobile from "./IconesMobile";
 
 export default function Container() {
     return (
-        <div class="container">
+        <div className="container">
             <Logo />
             <LogoMobile />
             <InstagramMobile />

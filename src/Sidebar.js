@@ -4,10 +4,22 @@ import Links from "./Links";
 import CopyRight from "./CopyRight";
 
 export default function Sidebar() {
-    const usuario = [<Usuario nomeDeUsuario="catanacomics" nomeReal="Catana" imagem="assets/img/catanacomics.svg" />]
+    const usuario = [
+        {
+            nomeDeUsuario: "catanacomics",
+            nomeReal: "Catana",
+            imagem: "assets/img/catanacomics.svg"
+        }
+    ]
     return (
-        <div class="sidebar">
-            {usuario.map(user => user)}
+        <div className="sidebar">
+            {
+                usuario.map((user, indice) => {
+                    return (
+                        <Usuario key={indice} nomeDeUsuario={user.nomeDeUsuario} nomeReal={user.nomeReal} imagem={user.imagem} />
+                    )
+                })
+            }
             <Sugestoes />
             <Links />
             <CopyRight />

@@ -2,7 +2,7 @@ import Container from "./Container";
 
 export default function Navbar() {
     return (
-        <div class="navbar">
+        <div className="navbar">
             <Container />
         </div>
     )

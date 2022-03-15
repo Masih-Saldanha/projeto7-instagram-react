@@ -1,10 +1,11 @@
 import Texto from "./Texto";
 
 export default function Usuario(props) {
+    const {imagem, nomeDeUsuario, nomeReal} = props;
     return (
-        <div class="usuario">
-            <img src={props.imagem} />
-            <Texto nomeDeUsuario={props.nomeDeUsuario} nomeReal={props.nomeReal} />
+        <div className="usuario">
+            <img src={imagem} />
+            <Texto nomeDeUsuario={nomeDeUsuario} nomeReal={nomeReal} />
         </div>
     )
 }

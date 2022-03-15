@@ -1,15 +1,16 @@
 export default function Sugestao(props) {
+    const {imagem, nome, razao} = props
     return (
-        <div class="sugestao">
-            <div class="usuario">
-                <img src={props.imagem} />
-                <div class="texto">
-                    <div class="nome">{props.nome}</div>
-                    <div class="razao">{props.razao}</div>
+        <div className="sugestao">
+            <div className="usuario">
+                <img src={imagem} />
+                <div className="texto">
+                    <div className="nome">{nome}</div>
+                    <div className="razao">{razao}</div>
                 </div>
             </div>
 
-            <div class="seguir">Seguir</div>
+            <div className="seguir">Seguir</div>
         </div>
     )
 }

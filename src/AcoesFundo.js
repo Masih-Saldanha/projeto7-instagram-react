@@ -1,6 +1,6 @@
 export default function AcoesFundo() {
     return (
-        <div class="acoes">
+        <div className="acoes">
             <div>
                 <ion-icon name="heart-outline"></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>

@@ -1,6 +1,6 @@
 export default function Texto(props) {
     return (
-        <div class="texto">
+        <div className="texto">
             <strong>{props.nomeDeUsuario}</strong>
             {props.nomeReal}
         </div>

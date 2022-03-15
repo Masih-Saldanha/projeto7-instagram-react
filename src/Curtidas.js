@@ -2,7 +2,7 @@ import TextoCurtido from "./TextoCurtido";
 
 export default function Curtidas(props) {
     return (
-        <div class="curtidas">
+        <div className="curtidas">
             <img src={props.imagemCurtidoPor} />
             <TextoCurtido nomeCurtidoPor={props.nomeCurtidoPor} curtidoPorTantos={props.curtidoPorTantos} />
         </div>

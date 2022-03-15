@@ -3,11 +3,12 @@ import Conteudo from "./Conteudo";
 import Fundo from "./Fundo";
 
 export default function Post(props) {
+    const {imagemUsuario, nomeUsuario, imagemPost, imagemCurtidoPor, nomeCurtidoPor, curtidoPorTantos} = props
     return (
-        <div class="post">
-            <Topo imagemUsuario={props.imagemUsuario} nomeUsuario={props.nomeUsuario} />
-            <Conteudo imagemPost={props.imagemPost} />
-            <Fundo imagemCurtidoPor={props.imagemCurtidoPor} nomeCurtidoPor={props.nomeCurtidoPor} curtidoPorTantos={props.curtidoPorTantos} />
+        <div className="post">
+            <Topo imagemUsuario={imagemUsuario} nomeUsuario={nomeUsuario} />
+            <Conteudo imagemPost={imagemPost} />
+            <Fundo imagemCurtidoPor={imagemCurtidoPor} nomeCurtidoPor={nomeCurtidoPor} curtidoPorTantos={curtidoPorTantos} />
         </div>
     )
 }
